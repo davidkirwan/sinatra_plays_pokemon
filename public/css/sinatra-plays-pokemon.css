@@ -1,0 +1,70 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;i
+}
+
+#top-h1 {
+  padding: 30px;
+  margin-bottom:50px;
+  color: #ffffff;
+}
+
+#content {
+  width: inherit;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  background-image: url('/franksinatra-3.jpg');
+  background-repeat: no-repeat;
+}
+
+#start {
+  position: fixed;
+  top: 100px;
+  left: 30px;
+}
+
+#select {
+  position: fixed;
+  top: 100px;
+  left: 130px;
+}
+
+#up {
+  position: fixed;
+  top: 200px;
+  left: 90px;
+}
+
+#left {
+  position: fixed;
+  top: 250px;
+  left: 30px;
+}
+
+#down {
+  position: fixed;
+  top: 250px;
+  left: 90px;
+}
+
+#right {
+  position: fixed;
+  top: 250px;
+  left: 150px;
+}
+
+#A {
+  position: fixed;
+  top: 340px;
+  left: 30px;
+}
+
+#B {
+  position: fixed;
+  top: 340px;
+  left: 100px;
+}

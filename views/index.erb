@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Latest compiled and minified jQuery -->
+    <script src="/js/jquery-1.11.0.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/sinatra-plays-pokemon.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <title>Sinatra Plays Pokemon</title>
+  </head>
+
+  <body>
+    <div id="content">
+      <h1 id="top-h1">Sinatra Plays Pokemon</h1>
+      <a id="start" class="btn btn-default btn-success btn-lg"><span class="glyphicon glyphicon-home"></span>Start</a>
+      <a id="select" class="btn btn-default btn-success btn-lg"><span class="glyphicon glyphicon-cog">Select</span></a>
+      <a id="up" class="btn btn-default btn-primary btn-lg"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+      <a id="left" class="btn btn-default btn-primary btn-lg"><span class="glyphicon glyphicon-circle-arrow-left"></span></a>
+      <a id="down" class="btn btn-default btn-primary btn-lg"><span class="glyphicon glyphicon-circle-arrow-down"></span></a>
+      <a id="right" class="btn btn-default btn-primary btn-lg"><span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+      <a id="A" class="btn btn-default btn-danger btn-lg"><span class="glyphicon glyphicon-unchecked"></span> A</a>
+      <a id="B" class="btn btn-default btn-danger btn-lg"><span class="glyphicon glyphicon-unchecked"></span> B</a>
+    </div>
+
+
+
+    <script>
+    $("#left").click(function(){
+      $.ajax({url:"/left",success:function(result){
+      }});
+    });
+    $("#up").click(function(){
+      $.ajax({url:"/up",success:function(result){
+      }});
+    });
+    $("#down").click(function(){
+      $.ajax({url:"/down",success:function(result){
+      }});
+    });
+    $("#right").click(function(){
+      $.ajax({url:"/right",success:function(result){
+      }});
+    });
+    $("#start").click(function(){
+      $.ajax({url:"/start",success:function(result){
+      }});
+    });
+    $("#select").click(function(){
+      $.ajax({url:"/select",success:function(result){
+      }});
+    });
+    $("#A").click(function(){
+      $.ajax({url:"/a",success:function(result){
+      }});
+    });
+    $("#B").click(function(){
+      $.ajax({url:"/b",success:function(result){
+      }});
+    });
+    </script>
+  </body>
+</html>
